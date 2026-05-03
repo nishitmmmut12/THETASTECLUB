@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Taste Club | Fine Dining & Cocktails</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tasteclub.css">
 </head>
 <body>
-    <!-- Custom Luxury Cursor -->
-    <div class="cursor"></div>
 
-    <!-- Navigation -->
+    <div class="fixed-bg"></div>
+
     <nav class="navbar">
         <div class="logo">The Taste Club</div>
         <ul class="nav-links">
@@ -24,75 +22,53 @@
         <button class="btn-top" onclick="toggleModal()">Book a Table</button>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero parallax-bg">
-        <div class="hero-overlay">
-            <div class="hero-content reveal">
-                <span class="sub-heading">— Welcome to —</span>
-                <h1 class="main-title">The Taste Club</h1>
-                <p class="tagline">FINE DINING & COCKTAILS</p>
-                <div class="hero-btns">
-                    <button class="btn-primary" onclick="toggleModal()">Reserve Your Table</button>
-                    <a href="#menu" class="btn-outline">Explore Menu</a>
-                </div>
-            </div>
+    <header id="home" class="hero">
+        <div class="hero-content reveal">
+            <span class="sub-heading">— Welcome to —</span>
+            <h1>The Taste Club</h1>
+            <p class="tagline">FINE DINING & COCKTAILS</p>
+            <button class="btn-primary" onclick="toggleModal()">Reserve Your Table</button>
+        </div>
+    </header>
+
+    <section id="menu" class="glass-section section-padding">
+        <div class="container reveal">
+            <h2 class="title-with-lines">Discover Our Menu</h2>
+            <p class="italic-sub">A Culinary Experience to Remember</p>
+            <p class="desc">At The Taste Club, we offer a unique blend of exquisite flavors, stylish ambiance, and exceptional service. Join us for an unforgettable culinary journey.</p>
+            <button class="btn-secondary">Learn More</button>
         </div>
     </section>
 
-    <!-- Content Section 1: Discovery -->
-    <section id="menu" class="discovery section-padding">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="title-with-lines">Discover Our Menu</h2>
-                <p class="italic-sub">A Culinary Experience to Remember</p>
-                <p class="desc">At The Taste Club, we offer a unique blend of exquisite flavors, stylish ambiance, and exceptional service. Join us for an unforgettable culinary journey through taste.</p>
-                <button class="btn-secondary">View The Full Menu</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section with Glassmorphism -->
-    <section id="events" class="events section-padding">
+    <section id="events" class="glass-section section-padding">
         <div class="container reveal">
             <h2 class="title-with-lines">Upcoming Events</h2>
+            <p class="italic-sub">Join Us for Special Nights & Happenings</p>
             <div class="event-grid">
                 <div class="event-card">
-                    <div class="event-inner">
-                        <h3>Wine Tasting Night</h3>
-                        <p class="event-date">Friday, August 12</p>
-                        <div class="line"></div>
-                        <p>Enjoy a selection of curated vintage wines paired with artisanal cheeses.</p>
-                    </div>
+                    <h3>Wine Tasting Night</h3>
+                    <p class="gold-text">Friday, August 12</p>
+                    <p>Sample a curated selection of vintage wines and artisanal pairings.</p>
                 </div>
                 <div class="event-card">
-                    <div class="event-inner">
-                        <h3>Live Jazz Evening</h3>
-                        <p class="event-date">Saturday, September 4</p>
-                        <div class="line"></div>
-                        <p>A smooth evening of live jazz performance and signature craft cocktails.</p>
-                    </div>
+                    <h3>Live Jazz Evening</h3>
+                    <p class="gold-text">Saturday, September 4</p>
+                    <p>A smooth evening of jazz accompanied by signature craft cocktails.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="section-padding">
+    <footer id="contact">
         <p>222 Culinary St, Cityville, TX · All Rights Reserved.</p>
-        <div class="socials">
-            <a href="#">FB</a> <a href="#">IG</a> <a href="#">TW</a>
-        </div>
     </footer>
 
-    <!-- Reservation Modal -->
     <div id="reserve-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="toggleModal()">&times;</span>
-            <h2>Book Your Experience</h2>
-            <p>Select your preferred timing via WhatsApp</p>
-            <div class="wa-btn-container">
-                <a href="https://wa.me/919621830300?text=I'd%20like%20to%20book%20a%20table%20at%20The%20Taste%20Club" target="_blank" class="wa-choice">Chat with Concierge</a>
-            </div>
+            <h2>Table Reservation</h2>
+            <p>Connect with our concierge on WhatsApp</p>
+            <a href="https://wa.me/919621830300?text=I'd%20like%20to%20book%20a%20table%20at%20The%20Taste%20Club" target="_blank" class="wa-btn">Book via WhatsApp</a>
         </div>
     </div>
 
